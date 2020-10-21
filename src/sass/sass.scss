@@ -1,0 +1,24 @@
+ @import "colors";
+ @import "mixins";
+ $breakpoint-mobile: 500px;
+ 
+ body{
+   background-color: $brown;
+   @include mobile();
+ }
+
+ h1,h2{
+   color: $lightblue;
+}
+
+.button{
+  @include button;
+  @include mobile();
+}
+
+  .study, .experience, .website {
+    border: 2px outset;
+    border-radius: 6px;
+    background-color: $lightblue;
+    margin-bottom: 20px;
+  }
