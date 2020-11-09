@@ -6,9 +6,20 @@
     cursor: pointer;
 }
 
+@mixin adminbutton{
+    background-color: $brown;
+    color: $lightgreen;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 @mixin mobile {
     @media screen and (max-width: #{$breakpoint-mobile}){
-        display: block;
-        font-size: 21px;
+        font-size: 11px;
+        max-width: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
 }

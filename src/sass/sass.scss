@@ -1,6 +1,6 @@
  @import "colors";
  @import "mixins";
- $breakpoint-mobile: 500px;
+ $breakpoint-mobile: 700px;
  
  body{
    background-color: $brown;
@@ -8,11 +8,39 @@
  }
 
  h1,h2{
-   color: $lightblue;
+  font-family: 'Corben', Georgia, Times, serif;
+   color: $lightgreen;
+   text-shadow: 7px 7px $black;
+}
+
+footer{
+  margin-top: 2%;
+  width: 100%;
+  padding: 3%;
+  background-color: $gray;
+  color: $black;
+  text-align: center;
+}
+
+#logoutbutton{
+  margin-top: 3%;
+}
+
+.adminbutton{
+  @include adminbutton();
+}
+
+p, div{
+  font-family: 'Nobile', Helvetica, Arial, sans-serif;
+  max-width: 100%;
+}
+
+label{
+  color: $lightblue;
 }
 
 .button{
-  @include button;
+  @include button();
   @include mobile();
 }
 
@@ -21,4 +49,7 @@
     border-radius: 6px;
     background-color: $lightblue;
     margin-bottom: 20px;
+    max-width: 100%;
+    white-space: pre-wrap; /* CSS3 */     
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
   }
