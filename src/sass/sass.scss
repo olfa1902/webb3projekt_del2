@@ -1,12 +1,28 @@
 @import "colors";
 @import "mixins";
-$breakpoint-mobile: 700px;
+$breakpoint-mobile: 414px;
 
 body{
   background-color: $brown;
   overflow-x: hidden;
   overflow-y: scroll;
   @include mobile();
+}
+
+form{
+  //width: 700px;
+  width: 100%;
+}
+
+input{
+  width: 200px;
+  height: 25px;
+}
+
+input[type=submit]{
+  margin-top: 20px;
+  width: 206px;
+  height: 50px;
 }
 
 h1,h2{
