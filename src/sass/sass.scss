@@ -1,55 +1,60 @@
- @import "colors";
- @import "mixins";
- $breakpoint-mobile: 700px;
- 
- body{
-   background-color: $brown;
-   @include mobile();
- }
+@import "colors";
+@import "mixins";
+$breakpoint-mobile: 700px;
 
- h1,h2{
-  font-family: 'Corben', Georgia, Times, serif;
-   color: $lightgreen;
-   text-shadow: 7px 7px $black;
-}
-
-footer{
-  margin-top: 2%;
-  width: 100%;
-  padding: 3%;
-  background-color: $gray;
-  color: $black;
-  text-align: center;
-}
-
-#logoutbutton{
-  margin-top: 3%;
-}
-
-.adminbutton{
-  @include adminbutton();
-}
-
-p, div{
-  font-family: 'Nobile', Helvetica, Arial, sans-serif;
-  max-width: 100%;
-}
-
-label{
-  color: $lightblue;
-}
-
-.button{
-  @include button();
+body{
+  background-color: $brown;
+  overflow-x: hidden;
+  overflow-y: scroll;
   @include mobile();
 }
 
-  .study, .experience, .website {
-    border: 2px outset;
-    border-radius: 6px;
-    background-color: $lightblue;
-    margin-bottom: 20px;
-    max-width: 100%;
-    white-space: pre-wrap; /* CSS3 */     
-    word-wrap: break-word; /* Internet Explorer 5.5+ */
-  }
+h1,h2{
+ font-family: 'Corben', Georgia, Times, serif;
+  color: $lightgreen;
+  text-shadow: 7px 7px $black;
+}
+
+@include navmeny();
+
+footer{
+ margin-top: 1%;
+ width: 98%;
+ padding: 1%;
+ background-color: $gray;
+ color: $black;
+ text-align: center;
+ font-size: 30px;
+}
+
+#logoutbutton{
+ margin-top: 3%;
+}
+
+.adminbutton{
+ @include adminbutton();
+}
+
+p, div{
+ font-family: 'Nobile', Helvetica, Arial, sans-serif;
+ max-width: 100%;
+}
+
+label{
+ color: $lightblue;
+}
+
+.button{
+ @include button();
+ @include mobile();
+}
+
+ .study, .experience, .website {
+   border: 2px outset;
+   border-radius: 6px;
+   background-color: $lightblue;
+   margin-bottom: 20px;
+   max-width: 100%;
+   white-space: pre-wrap; /* CSS3 */     
+   word-wrap: break-word; /* Internet Explorer 5.5+ */
+ }

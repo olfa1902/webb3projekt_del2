@@ -74,7 +74,7 @@ function getWebsites() {
             <p>
             <b>Titel: </b> ${website.titel}
             <br>
-            <b>Länk: </b> ${website.url}
+            <b>Länk: </b> <a href="${website.url}">${website.url}</a>
             <br>
             <b>Beskrivning: </b> ${website.beskrivning}
             </p>
